@@ -1,6 +1,6 @@
 body{
   background: beige;
-  color: aliceblue;
+  color: #000;;
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
   
@@ -9,7 +9,8 @@ body{
 .main-landing {
   height: 100vh;
   width: 100vw;
-  background-image: url(/assets/bkgrd_abstract.jpg);
+  background-color: #FFE53B;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
 }
 
 .hero {
