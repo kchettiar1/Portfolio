@@ -1,25 +1,25 @@
 :root {
-  --bgColour: hsla(0, 0%, 95%, 1);
+  --bgColourMain: hsla(0, 0%, 95%, 1);
   --textColour: hsla(0, 82%, 2%,1);
-  --navBgColour: hsla(0, 0%, 20%,1);
-  --navColour: hsla(0, 0%, 95%, 1);
+  --bgColourNavFooter: hsla(213, 92%, 60%,1);
+  --colourNavFooter: hsla(0, 0%, 95%, 1);
   --navHoverColour: hsla(0, 0%, 33%,1);
 }
 
 body{
-  background-color: var(--bgColour);
+  background-color: var(--bgColourMain);
   color: var(--textColour);
   font-family: 'Lato', sans-serif;
   font-size: 1rem;
-  
 }
+
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--navBgColour);
-  color: var(--navColour);
+  background-color: var(--bgColourNavFooter);
+  color: var(--colourNavFooter);
 }
 
 .brand {
@@ -41,7 +41,7 @@ body{
   text-decoration: none;
   padding: 1rem;
   display: block;
-  color: var(--navColour);
+  color: var(--colourNavFooter);
 }
 
 .navbar-links li:hover {
@@ -102,27 +102,44 @@ body{
 
 .main {
   height: 100vh;
-  width: 100vw; 
+  width: 100vw;
 }
 
 .hero {
   padding: 1em;
   max-width: 360px;
   margin: 0 auto;
-  text-align: center;
+  display: flex;
 }
 
-.hero-text-design {
-  font-family: 'Homemade Apple', cursive;
-  font-size: 3rem;
-}
-
-.hero-text-code {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 3rem;
+.hero-image {
+  height: 110px;
 }
 
 .hero-text {
   font-size: 1.5em;
+  padding-left: 1rem;
+  padding-top: -0.5rem;
 }
 
+
+.footer {
+  background-color: var(--bgColourNavFooter);
+  color: var(--colourNavFooter);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.footer ul {
+  display: flex;
+}
+.footer li {
+  list-style: none;
+}
+.footer li a{
+  text-decoration: none;
+  color: var(--colourNavFooter);
+  padding: 0 1rem;
+}
