@@ -1,7 +1,7 @@
 :root {
   --bgColourMain: hsla(0, 0%, 95%, 1);
   --textColour: hsla(0, 82%, 2%,1);
-  --bgColourNavFooter: hsla(213, 92%, 60%,1);
+  --bgColourNavFooter: hsla(0, 82%, 2%,1);
   --colourNavFooter: hsla(0, 0%, 95%, 1);
   --navHoverColour: hsla(0, 0%, 33%,1);
 }
@@ -125,7 +125,11 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1rem;
+  font-size: 0.75rem;
+}
+
+.copyright {
+  margin: 0.5rem;
 }
 
 .footer ul {
@@ -137,5 +141,5 @@ body{
 .footer li a{
   text-decoration: none;
   color: var(--colourNavFooter);
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
