@@ -10,6 +10,8 @@
 
   <title>Front End Developer</title>
 
+  <!-- Favicon -->
+
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/" />
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons//apple-touch-icon-57x57.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png" />
@@ -50,6 +52,11 @@
   <!-- Local styles -->
   <link rel="stylesheet" href="/styles/styles.css">
 
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <script src="/scripts/main.js" defer></script>
 
 
@@ -57,15 +64,17 @@
 
 <body>
 
-  <header class="header">
-    <nav class="navbar">
-      <div class="brand">Krishnan Chettiar</div>
+  <header class="header-wrapper">
 
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
+    <div class="brand-wrapper">
+
+      <div class="brand">
+        <img src="/assets/KC_logo.svg" alt="brand" class="brand-logo">
+      </div>
+
+    </div>
+
+    <nav class="navbar-wrapper">
 
       <div class="navbar-links">
         <ul>
@@ -74,35 +83,33 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
+
+      <div class="toggle-btn">
+        <!-- <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a> -->
+
+        <i class="fas fa-bars"></i>
+      </div>
+
+
     </nav>
+
 
   </header>
 
+
+
   <main class="main">
     <section class="hero">
-      <img class="hero-image" src="/assets/designCodeLogo.svg" alt="design & code logo">
-      <p class="hero-text">I focus on user interface design and web development.</p>
+      <div class="hero-text">
+        <h1 class="hero-text-main">Krishnan Chettiar</h1>
+        <h3 class="hero-text-sub">Front End Developer</h3>
+        <p class="hero-text">I focus on user interface design and web development.</p>
+      </div>
     </section>
-
-    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci, quae tempora libero
-      ex distinctio quisquam expedita alias officiis dignissimos, ea ut quidem. Mollitia rem in cum modi at. Eligendi.
-    </p>
-    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci, quae tempora libero
-      ex distinctio quisquam expedita alias officiis dignissimos, ea ut quidem. Mollitia rem in cum modi at. Eligendi.
-    </p>
-    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci, quae tempora libero
-      ex distinctio quisquam expedita alias officiis dignissimos, ea ut quidem. Mollitia rem in cum modi at. Eligendi.
-    </p>
-    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci, quae tempora libero
-      ex distinctio quisquam expedita alias officiis dignissimos, ea ut quidem. Mollitia rem in cum modi at. Eligendi.
-    </p>
-    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci, quae tempora libero
-      ex distinctio quisquam expedita alias officiis dignissimos, ea ut quidem. Mollitia rem in cum modi at. Eligendi.
-    </p>
-    <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur adipisci, quae tempora libero
-      ex distinctio quisquam expedita alias officiis dignissimos, ea ut quidem. Mollitia rem in cum modi at. Eligendi.
-    </p>
-
   </main>
 
 
@@ -111,11 +118,14 @@
     <div class="copyright"> &copy; 2021</div>
     <div class="social-media">
       <ul>
-        <li><a href="">Twitter</a></li>
+        <li><a href=""><i class="fab fa-twitter icons"></i></a></li>
         <li><a href="">Linkedin</a></li>
         <li><a href="">Github</a></li>
-      </ul>
-    </div>
+      </span>
+    </ul>
+  </div>
+  <span style="font-size: 48px; color: white;">
+    <i class="fas fa-twitter icons"></i>
   </footer>
 
 </body>

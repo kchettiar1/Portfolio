@@ -1,57 +1,167 @@
+/* CSS General Clear Settings */
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Try to keep your margins going in one direction to avoid margin collapase or grounding. I switch all the top margins off to avoid this issue. */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  /* You MUST make sure that links stand out from nomal text though...*/
+}
+
+/*
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+  */
+
+img {
+  /* This means that it can be less than 100% of the width of its parent IF the image is INTRINSICALLY smaller */
+  max-width: 100%;
+
+  height: auto;
+  /* 'auto' is the initial value for height BUT for images (and other elements which have an intrinic height) that is not the case. To make an image responsive you set one dimension (usually width) to [max-]width: 100%; and the other to 'auto' to ensure it keeps aspect ratio. 'auto' basically tells the browser to decide. */
+  vertical-align: middle;
+  /* minor vertical centering. Works for images IF there is a baseline (i.e. they are displayed inline or inline-block) */
+}
+
+/* Because we us <ul>s for lists that we don't always want bulletted. */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* To make actual bulletted lists */
+ul.typographic {
+  list-style: initial;
+  padding-inline-start: 20px;
+}
+
+/* For 'accessibility text'. If your button only has an image inside it that isn't good for accessibility. Put a span inside there and give it this class and put some descriptive text for what the button does into the span. */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* end of CSS General Clear Settings */
+
+/* Local Styles  - Root */
 :root {
-  --bgColourMain: hsla(0, 0%, 95%, 1);
-  --textColour: hsla(0, 82%, 2%,1);
-  --bgColourNavFooter: hsla(0, 82%, 2%,1);
-  --colourNavFooter: hsla(0, 0%, 95%, 1);
-  --navHoverColour: hsla(0, 0%, 33%,1);
+  --color-black-primary: hsla(100, 0%, 13%, 1);
+  --color-white-primary: hsl(0, 0%, 100%, 1);
 }
 
-body{
-  background-color: var(--bgColourMain);
-  color: var(--textColour);
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  height: 100vh;
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+/* Local CSS */
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--color-white-primary);
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.header-wrapper {
+  background-color: var(--color-black-primary);
   width: 100vw;
-}
-
-
-.navbar {
+  height: 10vh;
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.brand-wrapper {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  background-color: var(--bgColourNavFooter);
-  color: var(--colourNavFooter);
+  /* border: 2px solid yellow; */
 }
 
 .brand {
-  font-size: 1.5rem;
-  margin: 0.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.brand-logo {
+  height: 48px;
+  width: 48px;
+}
+.navbar-wrapper {
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: rgb(148, 177, 104);
+  border: 2px solid blue; */
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .navbar-links ul {
   margin: 0;
-  padding: 0;
+  padding: 0 0rem;
   display: flex;
 }
 
-.navbar-links li {
-  list-style: none;
-}
-
 .navbar-links li a {
-  text-decoration: none;
+  list-style: none;
   padding: 1rem;
-  display: block;
-  color: var(--colourNavFooter);
 }
 
-.navbar-links li:hover {
-  background-color: var(--navHoverColour);
-}
-
-
-.toggle-button{
+.toggle-button {
   position: absolute;
   top: 0.75rem;
   right: 1rem;
@@ -60,7 +170,6 @@ body{
   justify-content: space-between;
   width: 30px;
   height: 21px;
-  
 }
 
 .toggle-button .bar {
@@ -69,6 +178,9 @@ body{
   background-color: white;
   border-radius: 10px;
 }
+
+/* 
+
 
 @media (max-width: 600px) {
   .toggle-button {
@@ -95,7 +207,7 @@ body{
   }
 
   .navbar-links li a {
-   padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
   }
   .navbar-links.active {
     display: flex;
@@ -119,27 +231,66 @@ body{
   padding-top: -0.5rem;
 }
 
+} */
+
+.main {
+  /* background: rgb(72, 193, 233); */
+  background: linear-gradient(
+    180deg,
+    rgba(31, 89, 190, 1) 0%,
+    rgba(54, 119, 215, 1) 60%,
+    rgba(77, 150, 242, 1) 100%
+  );
+  text-shadow: 1px 1px 0px black;
+  font-weight: 400;
+  height: 85vh;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid yellow;
+  height: 60vh;
+  justify-content: center;
+  /* align-items: center; */
+}
+.hero-text {
+  padding: 2rem 2rem;
+}
+.hero-text-main {
+  font-weight: 400;
+  font-size: 3.2rem;
+  letter-spacing: 0.01em;
+  padding: 0 2rem;
+  margin-block-end: 0;
+}
+.hero-text-sub {
+  padding: 0 2rem;
+  margin-block-end: 0;
+}
+
 .footer {
-  background-color: var(--bgColourNavFooter);
-  color: var(--colourNavFooter);
+  background: var(--color-black-primary);
+  max-height: 5vh;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.75rem;
-}
-
-.copyright {
-  margin: 0.5rem;
+  padding: 1.25rem;
+  font-size: 1rem;
 }
 
 .footer ul {
   display: flex;
 }
-.footer li {
-  list-style: none;
+.footer ul li {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0.25rem;
 }
-.footer li a{
-  text-decoration: none;
-  color: var(--colourNavFooter);
-  padding: 0 1.5rem;
+
+.fab {
+  color: var(--color-white-primary);
+  background: var(--color-white-primary);
 }
