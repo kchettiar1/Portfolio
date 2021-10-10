@@ -93,6 +93,12 @@ ul.typographic {
 :root {
   --color-black-primary: hsla(100, 0%, 13%, 1);
   --color-white-primary: hsl(0, 0%, 100%, 1);
+  --color--bk-blue: linear-gradient(
+    180deg,
+    hsla(218, 72%, 43%, 1) 0%,
+    hsl(216, 67%, 53%, 1) 60%,
+    hsl(213, 86%, 63%, 1) 100%
+  );
 }
 
 /* Font Import */
@@ -104,7 +110,6 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   color: var(--color-white-primary);
   margin: 0;
-  /* height: 100%; */
   height: 100vh;
   overflow: hidden;
 }
@@ -124,7 +129,6 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* border: 2px solid yellow; */
 }
 
 .brand {
@@ -141,8 +145,6 @@ body {
   display: inline-flex;
   justify-content: flex-end;
   align-items: center;
-  /* background-color: rgb(148, 177, 104);
-  border: 2px solid blue; */
 }
 
 .navbar-links {
@@ -162,37 +164,18 @@ body {
   padding: 1rem;
 }
 
-/* .toggle-button {
-  position: absolute;
-  top: 0.75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: white;
-  border-radius: 10px;
-} */
-
 .toggle-btn {
   display: none;
 }
 
-@media  screen and (max-width:768px) {
-  .toggle-btn{
+@media screen and (max-width: 768px) {
+  .toggle-btn {
     display: initial;
   }
 
-  .navbar-links{
+  .navbar-links {
     display: none;
   }
-  
 }
 
 /* 
@@ -251,13 +234,8 @@ body {
 
 .main {
   /* background: rgb(72, 193, 233); */
-  background: linear-gradient(
-    180deg,
-    rgba(31, 89, 190, 1) 0%,
-    rgba(54, 119, 215, 1) 60%,
-    rgba(77, 150, 242, 1) 100%
-  );
-  text-shadow: 1px 1px 0px black;
+  background: var(--color--bk-blue);
+  text-shadow: 1px 1px 0px var(--color-black-primary);
   font-weight: 400;
   height: 85vh;
 }
@@ -270,21 +248,42 @@ body {
   justify-content: center;
 }
 .hero-text {
-  padding: 2rem 2rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 .hero-text-main {
   font-weight: 400;
-  font-size: 3.2rem;
+  font-size: 8rem;
   letter-spacing: 0.01em;
   padding: 0 2rem;
   margin-block-end: 0;
 }
 .hero-text-sub {
+  font-size: 6rem;
   padding: 0 2rem;
   margin-block-end: 0;
 }
 .hero p {
   padding: 2rem 2rem;
+}
+
+@media screen and (max-width: 758px) {
+  .hero-text-main {
+    font-size: 3.2rem;
+  }
+
+  .hero-text-sub {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .hero-text-main {
+    font-size: 2.4rem;
+  }
+
+  .hero-text-sub {
+    font-size: 1.8rem;
+  }
 }
 
 .footer {
