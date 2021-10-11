@@ -139,7 +139,8 @@ body {
 
 .brand-logo {
   height: 48px;
-  width: 48px;
+  width: 168px;
+  color: var(--color-white-primary);
 }
 .navbar-wrapper {
   display: inline-flex;
@@ -168,6 +169,9 @@ body {
   display: none;
 }
 
+.fa-times {
+  visibility: hidden;
+}
 @media screen and (max-width: 768px) {
   .toggle-btn {
     display: initial;
