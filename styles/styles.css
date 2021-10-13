@@ -139,7 +139,7 @@ body {
 
 .brand-logo {
   height: 48px;
-  width: 168px;
+  width: 48px;
   color: var(--color-white-primary);
 }
 .navbar-wrapper {
@@ -258,7 +258,7 @@ body {
 .hero-text-main {
   font-weight: 400;
   font-size: 8rem;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.05em;
   padding: 0 2rem;
   margin-block-end: 0;
 }
@@ -269,6 +269,7 @@ body {
 }
 .hero p {
   padding: 2rem 2rem;
+  font-size: 2rem;
 }
 
 @media screen and (max-width: 758px) {
