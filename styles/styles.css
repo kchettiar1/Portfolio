@@ -96,8 +96,8 @@ ul.typographic {
   --color--bk-blue: linear-gradient(
     180deg,
     hsla(218, 72%, 43%, 1) 0%,
-    hsl(216, 67%, 53%, 1) 60%,
-    hsl(213, 86%, 63%, 1) 100%
+    hsla(216, 67%, 53%, 1) 60%,
+    hsla(213, 86%, 63%, 1) 100%
   );
 }
 
@@ -179,6 +179,10 @@ body {
 
   .navbar-links {
     display: none;
+  }
+
+  .navbar-links.active {
+    display: flex;
   }
 }
 
@@ -270,6 +274,10 @@ body {
 .hero p {
   padding: 2rem 2rem;
   font-size: 2rem;
+}
+
+.under-construction a {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 758px) {
