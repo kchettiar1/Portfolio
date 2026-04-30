@@ -6,14 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
   <title>KC | Krishnan Chettiar</title>
 
-  <!-- Favicon -->
-
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/" />
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons//apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/assets/favicons/apple-touch-icon-57x57.png" />
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/favicons/apple-touch-icon-114x114.png" />
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/favicons/apple-touch-icon-72x72.png" />
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/favicons/apple-touch-icon-144x144.png" />
@@ -26,138 +21,163 @@
   <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="32x32" />
   <link rel="icon" type="image/png" href="/assets/favicons/favicon-16x16.png" sizes="16x16" />
   <link rel="icon" type="image/png" href="/assets/favicons/favicon-128.png" sizes="128x128" />
-  <meta name="application-name" content="&nbsp;" />
-  <meta name="msapplication-TileColor" content="#FFFFFF" />
-  <meta name="msapplication-TileImage" content="/assets/favicons/mstile-144x144.png" />
-  <meta name="msapplication-square70x70logo" content="/assets/favicons/mstile-70x70.png" />
-  <meta name="msapplication-square150x150logo" content="/assets/favicons/mstile-150x150.png" />
-  <meta name="msapplication-wide310x150logo" content="/assets/favicons/mstile-310x150.png" />
-  <meta name="msapplication-square310x310logo" content="/assets/favicons/mstile-310x310.png" />
   <link rel="shortcut icon" href="/assets/favicons/favicon.ico" type="image/x-icon">
 
-  <!-- Primary Meta Tags -->
-  <title>KC | Krishnan Chettiar</title>
-  <meta name="title" content="Krishnan Chetiiar">
-  <meta name="description" content="">
+  <meta name="title" content="KC | Krishnan Chettiar">
+  <meta name="description" content="Technical Lead / Technical Product Liaison based in Greater Oxford Area, delivering digital change and stakeholder-driven software outcomes.">
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.kchettiar.com/">
   <meta property="og:title" content="KC | Krishnan Chettiar">
-  <meta property="og:description" content="">
+  <meta property="og:description" content="Technical Lead / Technical Product Liaison based in Greater Oxford Area, delivering digital change and stakeholder-driven software outcomes.">
   <meta property="og:image" content="">
 
-  <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://www.kchettiar.com/">
   <meta property="twitter:title" content="KC | Krishnan Chettiar">
-  <meta property="twitter:description" content="">
+  <meta property="twitter:description" content="Technical Lead / Technical Product Liaison based in Greater Oxford Area, delivering digital change and stakeholder-driven software outcomes.">
   <meta property="twitter:image" content="">
 
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Homemade+Apple&family=Open+Sans&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Normalise -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <!-- Generics -->
-  <link rel="stylesheet" href="/styles/generics.css">
-
-  <!-- Local styles -->
-  <link rel="stylesheet" href="/styles/styles.css">
-
-
-  <!-- Fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- JavaScript -->
-  <!-- <script src="https://kit.fontawesome.com/5c6e774854.js" crossorigin="anonymous"></script> -->
-  <!-- Local js -->
+  <link rel="stylesheet" href="/styles/styles.css">
   <script src="/scripts/main.js" defer></script>
-
-
 </head>
 
 <body>
-
-  <header class="header-wrapper">
-
-    <div class="brand-wrapper">
-
-      <div class="brand">
-        <img src="/assets/KC_logo.svg" alt="brand" class="brand-logo">
-        <!-- <img src="/assets/codingKC_workmark.svg" alt="brand" class="brand-logo"> -->
-      </div>
-
+  <header class="site-header">
+    <div class="site-brand">
+      <span class="brand-mark">KC</span>
+      <span class="brand-name">Krishnan Chettiar</span>
     </div>
 
-    <nav class="navbar-wrapper">
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-      <div class="navbar-links">
-        <!-- <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul> -->
-      </div>
-
-      <div class="toggle-btn">
-        <a href="#"><i class="fas fa-bars" id="toggle-btn-bars"></i></a>
-        <i class="fas fa-times" id="toggle-btn-times"></i>
-      </div>
-
-
+    <nav class="navbar-links" id="navbar-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Focus</a>
+      <a href="#contact">Contact</a>
     </nav>
-
-
   </header>
 
-
-
-  <main class="main">
-
-    <section class="hero">
-      <div class="hero-text">
-        <h1 class="hero-text-main">Krishnan Chettiar</h1>
-        <!-- <h3 class="hero-text-sub">front end dev</h3> -->
-        <!-- <p class="under-construction">This site is under construction, please have a look at my <a href="https://www.linkedin.com/in/kchettiar/" target="_blank">linkedin</a> profile.</p> -->
-        <p class="under-construction">Please have a look at my <a href="https://www.linkedin.com/in/kchettiar/"
-            target="_blank">linkedin</a> profile.</p>
+  <main class="site-main">
+    <section class="hero-section">
+      <div class="hero-copy">
+        <p class="eyebrow">Technical Lead · Product Liaison</p>
+        <h1>Helping teams deliver meaningful digital change.</h1>
+        <p class="hero-description">
+          I work as a Technical Lead and Technical Product Liaison at Thames Valley Police,
+          connecting business goals, user needs and software delivery across the Greater Oxford Area.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#contact">Let’s connect</a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/kchettiar/" target="_blank" rel="noreferrer">View my LinkedIn</a>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="hero-card">
+          <p class="card-label">Latest role</p>
+          <h2>Technical Lead</h2>
+          <p>Thames Valley Police</p>
+          <p class="card-meta">Greater Oxford Area · Product-led digital delivery</p>
+        </div>
       </div>
     </section>
 
-    <!-- <section class="about">
-        <div class="about">
-          <h2>Who am I</h2>
-          <p>I'm KC, a front end web developer and UI enthusiast based in Oxford. I love all things web design and development related.</p>
-          <p>Beyond work, I enjoy family life, drink lots of tea and eat cake.</p>
+    <section class="section" id="about">
+      <div class="section-content">
+        <h2>About</h2>
+        <p>
+          I bring a practical, people-first approach to product and technical leadership.
+          My focus is on shaping software initiatives that are clear, collaborative and built to create impact.
+        </p>
+        <p>
+          With experience across public sector delivery, I thrive on translating complex requirements into
+          team-aligned outcomes and helping stakeholders move confidently from idea to execution.
+        </p>
+      </div>
+    </section>
 
-          <a href="#">More about me</a>
+    <section class="section section-alt" id="experience">
+      <div class="section-grid">
+        <div>
+          <h2>Experience</h2>
+          <p>
+            At Thames Valley Police I work across product, technical and stakeholder boundaries to deliver software change.
+            I help teams turn strategy into working systems while keeping the user and operational context front of mind.
+          </p>
         </div>
-      </section> -->
+        <div class="info-cards">
+          <article class="info-card">
+            <h3>Role</h3>
+            <p>Technical Lead / Technical Product Liaison</p>
+          </article>
+          <article class="info-card">
+            <h3>Organisation</h3>
+            <p>Thames Valley Police</p>
+          </article>
+          <article class="info-card">
+            <h3>Location</h3>
+            <p>Greater Oxford Area</p>
+          </article>
+          <article class="info-card">
+            <h3>Connections</h3>
+            <p>194+ on LinkedIn</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
+    <section class="section" id="skills">
+      <div class="section-content">
+        <h2>Focus Areas</h2>
+        <div class="skill-grid">
+          <span class="skill-pill">Product discovery</span>
+          <span class="skill-pill">Stakeholder collaboration</span>
+          <span class="skill-pill">Agile delivery</span>
+          <span class="skill-pill">Technical alignment</span>
+          <span class="skill-pill">Change leadership</span>
+          <span class="skill-pill">Service design</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="education">
+      <div class="section-content">
+        <h2>Education</h2>
+        <div class="education-card">
+          <p class="education-title">The Jump Digital School</p>
+          <p>Focused on practical digital delivery and product skills development.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-content">
+        <h2>Contact</h2>
+        <p>If you’d like to discuss product delivery, technical strategy or digital transformation, I’m always happy to connect.</p>
+        <div class="contact-buttons">
+          <a class="button button-primary" href="https://www.linkedin.com/in/kchettiar/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+          <a class="button button-secondary" href="https://github.com/kchettiar1" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-
-
-  <footer class="footer">
-    <div class="copyright"> &copy; 2026</div>
-    <div class="social-media">
-      <!-- <a href="https://twitter.com/kchettiar1" target="_blank"><i class="fab fa-twitter icons"></i></a> -->
-      <a href="https://www.linkedin.com/in/kchettiar/" target="_blank"><i class="fab fa-linkedin icons"></i></a>
-      <a href="https://github.com/kchettiar1" target="_blank"><i class="fab fa-github icons"></i></a>
-      <!-- <a href="https://dribbble.com/kchettiar1" target="_blank"><i class="fab fa-dribbble icons"></i></a> -->
-    </div>
+  <footer class="site-footer">
+    <p>© 2026 • Built for clarity and fast connection.</p>
   </footer>
-
 </body>
 
 </html>

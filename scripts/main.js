@@ -1,12 +1,10 @@
-const toggleBtnBars = document.getElementById('toggle-btn-bars')[0];
-const navBarLinks = document.getElementsByClassName('navbar-links')[0];
+const menuToggle = document.getElementById('menu-toggle');
+const navbarLinks = document.getElementById('navbar-links');
 
-toggleBtnBars.addEventListener('click', () => {
-  navBarLinks.classList.toggle('show');
-})
-
-// const wrapper = document.getElementById('hamburger-wrapper')
-
-// wrapper.addEventListener("click", () => {
-//   wrapper.classList.toggle("open")
-// })
+if (menuToggle && navbarLinks) {
+  menuToggle.addEventListener('click', () => {
+    const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+    menuToggle.setAttribute('aria-expanded', String(!expanded));
+    navbarLinks.classList.toggle('active');
+  });
+}
